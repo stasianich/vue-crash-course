@@ -7,7 +7,7 @@
         v-on:change="$emit('set-completed', todo.id)"
       >
       <strong>{{ index + 1 }}</strong>
-      {{ todo.title }}
+      {{ upperCaseTitle }}
     </span>
     <button
       class="remove"
@@ -26,7 +26,12 @@ export default {
       required: true,
     },
     index: Number,
-  }
+  },
+  computed: {
+    upperCaseTitle() {
+      return this.todo.title.toUpperCase();
+    }
+  },
 }
 </script>
 
