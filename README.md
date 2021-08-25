@@ -1,5 +1,7 @@
 # vue-crash-course
 
+[DEMO](https://stasianich.github.io/vue-crash-course/)
+
 ## Project setup
 ```
 npm install
